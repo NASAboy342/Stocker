@@ -32,18 +32,15 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.mainTab = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btUpdate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbIdSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbOut = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbIn = new System.Windows.Forms.TextBox();
-            this.tbOut = new System.Windows.Forms.TextBox();
-            this.btUpdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.mainTab.SuspendLayout();
@@ -83,6 +80,42 @@
             this.mainTab.TabIndex = 0;
             this.mainTab.Text = " Main";
             // 
+            // btUpdate
+            // 
+            this.btUpdate.Location = new System.Drawing.Point(592, 218);
+            this.btUpdate.Name = "btUpdate";
+            this.btUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btUpdate.TabIndex = 8;
+            this.btUpdate.Text = "Update";
+            this.btUpdate.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(479, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Id";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(19, 81);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(357, 553);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // tbIdSearch
+            // 
+            this.tbIdSearch.Location = new System.Drawing.Point(534, 89);
+            this.tbIdSearch.Name = "tbIdSearch";
+            this.tbIdSearch.Size = new System.Drawing.Size(133, 20);
+            this.tbIdSearch.TabIndex = 3;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -94,30 +127,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock Controll";
             // 
-            // label2
+            // tbOut
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(319, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Id";
-            // 
-            // tbIdSearch
-            // 
-            this.tbIdSearch.Location = new System.Drawing.Point(374, 88);
-            this.tbIdSearch.Name = "tbIdSearch";
-            this.tbIdSearch.Size = new System.Drawing.Size(133, 20);
-            this.tbIdSearch.TabIndex = 3;
+            this.tbOut.Location = new System.Drawing.Point(534, 178);
+            this.tbOut.Name = "tbOut";
+            this.tbOut.Size = new System.Drawing.Size(133, 20);
+            this.tbOut.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(319, 129);
+            this.label3.Location = new System.Drawing.Point(479, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 24);
             this.label3.TabIndex = 4;
@@ -128,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(319, 172);
+            this.label4.Location = new System.Drawing.Point(479, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 24);
             this.label4.TabIndex = 5;
@@ -136,56 +158,10 @@
             // 
             // tbIn
             // 
-            this.tbIn.Location = new System.Drawing.Point(374, 134);
+            this.tbIn.Location = new System.Drawing.Point(534, 135);
             this.tbIn.Name = "tbIn";
             this.tbIn.Size = new System.Drawing.Size(133, 20);
             this.tbIn.TabIndex = 6;
-            // 
-            // tbOut
-            // 
-            this.tbOut.Location = new System.Drawing.Point(374, 177);
-            this.tbOut.Name = "tbOut";
-            this.tbOut.Size = new System.Drawing.Size(133, 20);
-            this.tbOut.TabIndex = 7;
-            // 
-            // btUpdate
-            // 
-            this.btUpdate.Location = new System.Drawing.Point(432, 217);
-            this.btUpdate.Name = "btUpdate";
-            this.btUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btUpdate.TabIndex = 8;
-            this.btUpdate.Text = "Update";
-            this.btUpdate.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.name,
-            this.quantity});
-            this.dataGridView1.Location = new System.Drawing.Point(19, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(265, 553);
-            this.dataGridView1.TabIndex = 9;
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.id.HeaderText = "Id";
-            this.id.Name = "id";
-            this.id.Width = 21;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // quantity
-            // 
-            this.quantity.HeaderText = "Quantity";
-            this.quantity.Name = "quantity";
             // 
             // Form1
             // 
@@ -197,6 +173,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);
@@ -220,9 +197,6 @@
         private System.Windows.Forms.TextBox tbIdSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
     }
 }
 
