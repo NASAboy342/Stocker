@@ -73,16 +73,21 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\ConnectionStringModel.cs" />
     <Compile Include="Models\ItemsModels.cs" />
+    <Compile Include="Models\Response\ErrorResponse.cs" />
     <Compile Include="Models\Response\ItemsResponse.cs" />
     <Compile Include="Models\Response\UpdatedDateResponse.cs" />
+    <Compile Include="Models\Request\UpdateStockRequest.cs" />
     <Compile Include="Models\StoredProcedureModels.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DataBaseDataRepo.cs" />
     <Compile Include="Repository\Interfaces\IDataBaseDataRepo.cs" />
+    <Compile Include="Repository\UpdateStockRepo.cs" />
     <Compile Include="Services\Interfaces\IStockItemsService.cs" />
     <Compile Include="Services\StockItemsService.cs" />
+    <Compile Include="Services\StockUpdateService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,8 +115,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

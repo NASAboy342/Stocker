@@ -17,7 +17,7 @@ namespace Stocker.Repository
 
         public DataBaseDataRepo()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings["ConnectionString1"].ToString();
+            _connectionString = ConnectionStringModel.ConnectionString;
         }
         public List<ItemsModels> SelectAllFromItems()
         {

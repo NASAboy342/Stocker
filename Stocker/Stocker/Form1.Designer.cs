@@ -41,6 +41,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbIn = new System.Windows.Forms.TextBox();
+            this.btHistry = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.mainTab.SuspendLayout();
@@ -64,6 +69,11 @@
             // mainTab
             // 
             this.mainTab.BackColor = System.Drawing.Color.Teal;
+            this.mainTab.Controls.Add(this.button3);
+            this.mainTab.Controls.Add(this.button4);
+            this.mainTab.Controls.Add(this.button2);
+            this.mainTab.Controls.Add(this.button1);
+            this.mainTab.Controls.Add(this.btHistry);
             this.mainTab.Controls.Add(this.btUpdate);
             this.mainTab.Controls.Add(this.label2);
             this.mainTab.Controls.Add(this.dataGridView1);
@@ -88,6 +98,7 @@
             this.btUpdate.TabIndex = 8;
             this.btUpdate.Text = "Update";
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.BtUpdate_Click);
             // 
             // label2
             // 
@@ -163,6 +174,61 @@
             this.tbIn.Size = new System.Drawing.Size(133, 20);
             this.tbIn.TabIndex = 6;
             // 
+            // btHistry
+            // 
+            this.btHistry.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHistry.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.btHistry.Location = new System.Drawing.Point(1139, 81);
+            this.btHistry.Name = "btHistry";
+            this.btHistry.Size = new System.Drawing.Size(109, 42);
+            this.btHistry.TabIndex = 10;
+            this.btHistry.Text = "History";
+            this.btHistry.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Location = new System.Drawing.Point(1139, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 42);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Location = new System.Drawing.Point(1139, 178);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 42);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Location = new System.Drawing.Point(1139, 274);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 42);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "...";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button4.Location = new System.Drawing.Point(1139, 226);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 42);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "...";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +263,11 @@
         private System.Windows.Forms.TextBox tbIdSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btHistry;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
