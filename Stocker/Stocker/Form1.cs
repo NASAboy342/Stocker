@@ -13,9 +13,9 @@ using Stocker.Models.Response;
 
 namespace Stocker
 {
-    public partial class Form1 : Form
+    public partial class Stocker : Form
     {
-        public Form1()
+        public Stocker()
         {
             InitializeComponent();
         }
